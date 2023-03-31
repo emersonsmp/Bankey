@@ -27,7 +27,7 @@ extension LoginViewController {
     
     private func style(){
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.text = "Bankey"
+        titleLabel.text = "MY Bankey"
         titleLabel.textAlignment = .center
         titleLabel.textColor = .black
         titleLabel.font = UIFont.systemFont(ofSize: 28)
