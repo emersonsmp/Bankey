@@ -17,13 +17,64 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="370" height="144"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rcM-vi-fdH">
+                    <rect key="frame" x="16" y="16" width="338" height="112"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nDX-BJ-Qv7">
+                            <rect key="frame" x="0.0" y="0.0" width="252" height="112"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bankey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ag5-5I-zg1">
+                                    <rect key="frame" x="0.0" y="0.0" width="252" height="31.666666666666668"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good morning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyM-7P-UZA">
+                                    <rect key="frame" x="0.0" y="39.666666666666664" width="252" height="19.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emerson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoL-qQ-CW6">
+                                    <rect key="frame" x="0.0" y="67" width="252" height="19"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eie-mM-qDT">
+                                    <rect key="frame" x="0.0" y="94" width="252" height="18"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AMo-lw-bTA">
+                            <rect key="frame" x="256" y="0.0" width="82" height="65"/>
+                            <color key="tintColor" red="0.94117647059999998" green="0.7843137255" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="MtT-Gs-HAP"/>
+                                <constraint firstAttribute="height" constant="65" id="ixQ-Rp-yfl"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rcM-vi-fdH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="4H0-g5-EIr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rcM-vi-fdH" secondAttribute="trailing" priority="999" constant="16" id="FN9-fK-A1q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rcM-vi-fdH" secondAttribute="bottom" priority="999" constant="16" id="PwQ-dd-jCS"/>
+                <constraint firstItem="rcM-vi-fdH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="kdN-Af-4Qq"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="150.38167938931298" y="-201.7605633802817"/>
+            <point key="canvasLocation" x="149.61832061068702" y="-202.11267605633805"/>
         </view>
     </objects>
     <resources>
+        <image name="sun.max.fill" catalog="system" width="128" height="125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
