@@ -48,11 +48,11 @@ class MainViewController: UITabBarController {
         tabBar.isTranslucent = false
     }
     
-    class AccountSummaryViewController: UIViewController{
-        override func viewDidLoad() {
-            view.backgroundColor = .systemGreen
-        }
-    }
+//    public class AccountSummaryViewController: UIViewController{
+//        override func viewDidLoad() {
+//            view.backgroundColor = .systemGreen
+//        }
+//    }
     
     class MoveMoneyViewController: UIViewController{
         override func viewDidLoad() {

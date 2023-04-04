@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //window?.rootViewController = onboardingContainerViewController
         //window?.rootViewController = OnboardingContainerViewController()
         //window?.rootViewController = loginViewController
-        window?.rootViewController = mainViewController
+        //window?.rootViewController = mainViewController
+        window?.rootViewController = AccountSummaryViewController()
         mainViewController.selectedIndex = 1
         
         return true
