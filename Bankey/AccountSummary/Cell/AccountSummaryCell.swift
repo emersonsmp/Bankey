@@ -19,8 +19,11 @@ class AccountSummaryCell: UITableViewCell {
     struct ViewModel {
         let accoountType: AccountType
         let accountName: String
-        let balanceDollar: Decimal
-        let balanceCent: Decimal
+        let balance: Decimal
+        
+        var balanceAsAttributedString: NSAttributedString {
+            return CurrencyFormatter().makeAttributedCurrency(balance)
+        }
     }
     
     let viewModel: ViewModel? = nil
@@ -117,14 +120,14 @@ extension AccountSummaryCell {
         let dollarSignAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .callout), .baselineOffset: 8]
         let dollarAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .title1)]
         let centAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .footnote), .baselineOffset: 8]
-        
+
         let rootString = NSMutableAttributedString(string: "$", attributes: dollarSignAttributes)
         let dollarString = NSAttributedString(string: dollars, attributes: dollarAttributes)
         let centString = NSAttributedString(string: cents, attributes: centAttributes)
-        
+
         rootString.append(dollarString)
         rootString.append(centString)
-        
+
         return rootString
     }
 }
@@ -133,10 +136,7 @@ extension AccountSummaryCell {
     func configure(with vm: ViewModel){
         typeLabel.text = vm.accoountType.rawValue
         nameLabel.text = vm.accountName
-        let dollar = "\(vm.balanceDollar)"
-        let cent =  "\(vm.balanceCent)"
-        
-        balanceAmountLabel.attributedText = makeFormattedBalance(dollars: dollar, cents: cent)
+        balanceAmountLabel.attributedText = vm.balanceAsAttributedString
         
         switch vm.accoountType {
             case .Banking:

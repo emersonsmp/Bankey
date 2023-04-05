@@ -98,38 +98,32 @@ extension AccountSummaryViewController {
         let savings = AccountSummaryCell.ViewModel(
             accoountType: .Banking,
             accountName: "Basic Savings",
-            balanceDollar: 929466,
-            balanceCent: 63)
+            balance: 929466.23)
         
         let chequing = AccountSummaryCell.ViewModel(
             accoountType: .Banking,
             accountName: "No-Fee All-In Chequing",
-            balanceDollar: 17562,
-            balanceCent: 63)
+            balance: 17562.44)
         
         let visa = AccountSummaryCell.ViewModel(
             accoountType: .CreditCard,
             accountName: "Visa Avion Card",
-            balanceDollar: 412,
-            balanceCent: 63)
+            balance: 412.83)
         
         let mastercard = AccountSummaryCell.ViewModel(
             accoountType: .CreditCard,
             accountName: "Student Mastercard",
-            balanceDollar: 50,
-            balanceCent: 63)
+            balance: 50.83)
         
         let investment1 = AccountSummaryCell.ViewModel(
             accoountType: .Investment,
             accountName: "Tax-Free Saver",
-            balanceDollar: 2000,
-            balanceCent: 63)
+            balance: 2000.50)
         
         let investment2 = AccountSummaryCell.ViewModel(
             accoountType: .Investment,
             accountName: "Growth Fund",
-            balanceDollar: 15000,
-            balanceCent: 63)
+            balance: 15000.00)
         
         accounts.append(savings)
         accounts.append(chequing)

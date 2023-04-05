@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D226690A29DE0A9900843B52 /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226690929DE0A9900843B52 /* DecimalUtils.swift */; };
+		D226690C29DE0B1A00843B52 /* CurrenceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226690B29DE0B1A00843B52 /* CurrenceFormatter.swift */; };
 		D23AB73529D6014B00CA0C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB73429D6014B00CA0C3F /* AppDelegate.swift */; };
 		D23AB73929D6014B00CA0C3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB73829D6014B00CA0C3F /* LoginViewController.swift */; };
 		D23AB73E29D6014C00CA0C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23AB73D29D6014C00CA0C3F /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D226690929DE0A9900843B52 /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
+		D226690B29DE0B1A00843B52 /* CurrenceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenceFormatter.swift; sourceTree = "<group>"; };
 		D23AB73129D6014B00CA0C3F /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23AB73429D6014B00CA0C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23AB73829D6014B00CA0C3F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 			children = (
 				D24198E029DB5A220028B1C0 /* Localstate.swift */,
 				D24198E229DB68F50028B1C0 /* UIViewController+Utils.swift */,
+				D226690929DE0A9900843B52 /* DecimalUtils.swift */,
+				D226690B29DE0B1A00843B52 /* CurrenceFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,7 +232,9 @@
 				D24198DE29DB4A8B0028B1C0 /* DummyViewController.swift in Sources */,
 				D2D058F229DCA652009883B2 /* AccountSummaryHeaderView.swift in Sources */,
 				D23AB73929D6014B00CA0C3F /* LoginViewController.swift in Sources */,
+				D226690A29DE0A9900843B52 /* DecimalUtils.swift in Sources */,
 				D23AB75129D76E5100CA0C3F /* OnboardingViewController.swift in Sources */,
+				D226690C29DE0B1A00843B52 /* CurrenceFormatter.swift in Sources */,
 				D2D058F829DCC088009883B2 /* AccountSummaryCell.swift in Sources */,
 				D23AB73529D6014B00CA0C3F /* AppDelegate.swift in Sources */,
 				D24198E529DB6C2A0028B1C0 /* MainViewController.swift in Sources */,
@@ -378,6 +386,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,6 +414,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
