@@ -10,6 +10,21 @@ import UIKit
 
 class AccountSummaryCell: UITableViewCell {
     
+    enum AccountType: String {
+        case Banking
+        case CreditCard
+        case Investment
+    }
+    
+    struct ViewModel {
+        let accoountType: AccountType
+        let accountName: String
+        let balanceDollar: Decimal
+        let balanceCent: Decimal
+    }
+    
+    let viewModel: ViewModel? = nil
+    
     let typeLabel = UILabel()
     let underLineView = UIView()
     let nameLabel = UILabel()
@@ -39,7 +54,6 @@ extension AccountSummaryCell {
         typeLabel.translatesAutoresizingMaskIntoConstraints = false
         typeLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
         typeLabel.adjustsFontForContentSizeCategory = true
-        typeLabel.text = "Account type"
         
         underLineView.translatesAutoresizingMaskIntoConstraints = false
         underLineView.backgroundColor = appColor
@@ -47,7 +61,6 @@ extension AccountSummaryCell {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.font = UIFont.preferredFont(forTextStyle: .body)
         nameLabel.adjustsFontForContentSizeCategory = true
-        nameLabel.text = "Account name"
         
         balanceStakeView.translatesAutoresizingMaskIntoConstraints = false
         balanceStakeView.axis = .vertical
@@ -56,12 +69,9 @@ extension AccountSummaryCell {
         balanceLabel.translatesAutoresizingMaskIntoConstraints = false
         balanceLabel.font = UIFont.preferredFont(forTextStyle: .body)
         balanceLabel.textAlignment = .right
-        balanceLabel.text = "Some balance"
         
         balanceAmountLabel.translatesAutoresizingMaskIntoConstraints = false
         balanceAmountLabel.textAlignment = .right
-//        balanceAmountLabel.text = "$929,446.63"
-        balanceAmountLabel.attributedText = makeFormattedBalance(dollars: "929,466", cents: "63")
         
         chevronImageView.translatesAutoresizingMaskIntoConstraints = false
         let chevronImage = UIImage(systemName: "chevron.right")!.withTintColor(appColor, renderingMode: .alwaysOriginal)
@@ -81,11 +91,7 @@ extension AccountSummaryCell {
     
     private func layout(){
         NSLayoutConstraint.activate([
-            //TEACHER CODE
-            //typeLabel.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 2),
-            //typeLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 2),
             
-            //MY CODE
             typeLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
             typeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             
@@ -100,10 +106,6 @@ extension AccountSummaryCell {
             balanceStakeView.topAnchor.constraint(equalTo: underLineView.bottomAnchor, constant: 0),
             balanceStakeView.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor, constant: 32),
             balanceStakeView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
-            
-//            chevronImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -6),
-            
-//            trailingAnchor.constraint(equalToSystemSpacingAfter: chevronImageView.trailingAnchor, multiplier: 1)
             
             chevronImageView.topAnchor.constraint(equalTo: underLineView.bottomAnchor, constant: 8),
             chevronImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
@@ -124,5 +126,28 @@ extension AccountSummaryCell {
         rootString.append(centString)
         
         return rootString
+    }
+}
+
+extension AccountSummaryCell {
+    func configure(with vm: ViewModel){
+        typeLabel.text = vm.accoountType.rawValue
+        nameLabel.text = vm.accountName
+        let dollar = "\(vm.balanceDollar)"
+        let cent =  "\(vm.balanceCent)"
+        
+        balanceAmountLabel.attributedText = makeFormattedBalance(dollars: dollar, cents: cent)
+        
+        switch vm.accoountType {
+            case .Banking:
+                underLineView.backgroundColor = appColor
+                balanceLabel.text = "Current balance"
+            case .CreditCard:
+                underLineView.backgroundColor = .systemOrange
+                balanceLabel.text = "Balance"
+            case .Investment:
+                underLineView.backgroundColor = .systemPurple
+                balanceLabel.text = "Value"
+        }
     }
 }
