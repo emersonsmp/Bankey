@@ -9,15 +9,6 @@ import UIKit
 
 extension UIViewController {
     
-//    func setStatusbar(){
-//        let statusBarSize = UIApplication.shared.statusBarFrame.size
-//        let frame = CGRect(origin: .zero, size: statusBarSize)
-//        let statusBarView = UIView(frame: frame)
-//
-//        statusBarView.backgroundColor = appColor
-//        view.addSubview(statusBarView)
-//    }
-    
     func setStatusBar() {
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithTransparentBackground()
