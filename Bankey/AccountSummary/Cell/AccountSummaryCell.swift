@@ -72,6 +72,7 @@ extension AccountSummaryCell {
         balanceLabel.translatesAutoresizingMaskIntoConstraints = false
         balanceLabel.font = UIFont.preferredFont(forTextStyle: .body)
         balanceLabel.textAlignment = .right
+        balanceLabel.adjustsFontSizeToFitWidth = true
         
         balanceAmountLabel.translatesAutoresizingMaskIntoConstraints = false
         balanceAmountLabel.textAlignment = .right
@@ -141,7 +142,7 @@ extension AccountSummaryCell {
         switch vm.accoountType {
             case .Banking:
                 underLineView.backgroundColor = appColor
-                balanceLabel.text = "Current balance"
+                balanceLabel.text = "Current"
             case .CreditCard:
                 underLineView.backgroundColor = .systemOrange
                 balanceLabel.text = "Balance"
