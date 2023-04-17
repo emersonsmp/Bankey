@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: LoginViewControllerDelegate{
     
-    func didLogin() {        
+    func didLogin() {
         if LocalState.hasOnboarded{
             setRootViewController(mainViewController)
         }else {

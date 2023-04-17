@@ -26,6 +26,12 @@ class LoginViewController: UIViewController {
         return loginView.passwordTextField.text
     }
     
+    var leadingEdgeOnScreen: CGFloat = 16
+    var leadingEdgeOffScreen: CGFloat = -1000
+    
+    var titleLeadingAnchor: NSLayoutConstraint?
+//    var subTitleLeadingAnchor: NSLayoutConstraint?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
@@ -35,6 +41,11 @@ class LoginViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         signInButton.configuration?.showsActivityIndicator = false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        animate()
     }
 }
 
@@ -52,6 +63,7 @@ extension LoginViewController {
         descriptionLabel.textAlignment = .center
         descriptionLabel.textColor = .black
         descriptionLabel.font = UIFont.systemFont(ofSize: 20)
+        descriptionLabel.alpha = 0
         
         
         loginView.translatesAutoresizingMaskIntoConstraints = false
@@ -77,12 +89,16 @@ extension LoginViewController {
         view.addSubview(signInButton)
         view.addSubview(errorMessageLabel)
         
+        //TITLE
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 220),
-            titleLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor),
         ])
         
+        titleLeadingAnchor = titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: leadingEdgeOffScreen)
+        titleLeadingAnchor?.isActive = true
+        
+        //SUBTITLE
         NSLayoutConstraint.activate([
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
             descriptionLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
@@ -141,6 +157,24 @@ extension LoginViewController {
     private func configureView(withMessage message: String){
         errorMessageLabel.isHidden = false
         errorMessageLabel.text = message
+    }
+}
+
+extension LoginViewController {
+    private func animate() {
+        let duration = 0.75
+        
+        let animator1 = UIViewPropertyAnimator(duration: duration, curve: .easeInOut){
+            self.titleLeadingAnchor?.constant = self.leadingEdgeOnScreen
+            self.view.layoutIfNeeded()
+        }
+        animator1.startAnimation()
+        
+        let animator3 = UIViewPropertyAnimator(duration: duration*2, curve: .easeInOut){
+            self.descriptionLabel.alpha = 1
+            self.view.layoutIfNeeded()
+        }
+        animator3.startAnimation(afterDelay: 0.75)
     }
 }
 
