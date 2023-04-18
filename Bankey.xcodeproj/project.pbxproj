@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D219348629EDCCD800608433 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219348529EDCCD800608433 /* ShakeyBellView.swift */; };
 		D226690A29DE0A9900843B52 /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226690929DE0A9900843B52 /* DecimalUtils.swift */; };
 		D226690C29DE0B1A00843B52 /* CurrenceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226690B29DE0B1A00843B52 /* CurrenceFormatter.swift */; };
 		D226691B29DF49A100843B52 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226691A29DF49A100843B52 /* CurrencyFormatterTests.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D219348529EDCCD800608433 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		D226690929DE0A9900843B52 /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
 		D226690B29DE0B1A00843B52 /* CurrenceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenceFormatter.swift; sourceTree = "<group>"; };
 		D226691129DF484300843B52 /* BankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D219348429EDCCB200608433 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D219348529EDCCD800608433 /* ShakeyBellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		D226691229DF484300843B52 /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +122,7 @@
 		D23AB73329D6014B00CA0C3F /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				D219348429EDCCB200608433 /* Components */,
 				D23AB73429D6014B00CA0C3F /* AppDelegate.swift */,
 				D24198E429DB6C2A0028B1C0 /* MainViewController.swift */,
 				D23AB74A29D6060800CA0C3F /* Login */,
@@ -312,6 +323,7 @@
 				D23AB75129D76E5100CA0C3F /* OnboardingViewController.swift in Sources */,
 				D226690C29DE0B1A00843B52 /* CurrenceFormatter.swift in Sources */,
 				D2D058F829DCC088009883B2 /* AccountSummaryCell.swift in Sources */,
+				D219348629EDCCD800608433 /* ShakeyBellView.swift in Sources */,
 				D23AB73529D6014B00CA0C3F /* AppDelegate.swift in Sources */,
 				D24198E529DB6C2A0028B1C0 /* MainViewController.swift in Sources */,
 				D2F97E6629E880EF00B0123A /* NSNotificationName.swift in Sources */,

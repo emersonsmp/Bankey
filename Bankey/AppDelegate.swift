@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         registerForNotifications()
         
-        let vc = mainViewController
+//        let vc = mainViewController
+        let vc = loginViewController
         vc.setStatusBar()
         
         UINavigationBar.appearance().isTranslucent = false
