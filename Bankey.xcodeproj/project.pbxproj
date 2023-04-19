@@ -24,6 +24,8 @@
 		D24198E529DB6C2A0028B1C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24198E429DB6C2A0028B1C0 /* MainViewController.swift */; };
 		D2BB03B029F087A300D79A56 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB03AF29F087A300D79A56 /* Date+Utils.swift */; };
 		D2BB03B229F08AAC00D79A56 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB03B129F08AAC00D79A56 /* AccountSummaryViewController+Networking.swift */; };
+		D2BB03B629F0B3F000D79A56 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB03B529F0B3F000D79A56 /* ProfileTests.swift */; };
+		D2BB03B829F0B47400D79A56 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB03B729F0B47400D79A56 /* AccountTests.swift */; };
 		D2D058F029DC9F96009883B2 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D058EF29DC9F96009883B2 /* AccountSummaryViewController.swift */; };
 		D2D058F229DCA652009883B2 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D058F129DCA652009883B2 /* AccountSummaryHeaderView.swift */; };
 		D2D058F429DCA6F5009883B2 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D058F329DCA6F5009883B2 /* AccountSummaryHeaderView.xib */; };
@@ -63,6 +65,8 @@
 		D24198E429DB6C2A0028B1C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D2BB03AF29F087A300D79A56 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		D2BB03B129F08AAC00D79A56 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
+		D2BB03B529F0B3F000D79A56 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		D2BB03B729F0B47400D79A56 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		D2D058EF29DC9F96009883B2 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		D2D058F129DCA652009883B2 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		D2D058F329DCA6F5009883B2 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
@@ -100,7 +104,8 @@
 		D226691229DF484300843B52 /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				D226691A29DF49A100843B52 /* CurrencyFormatterTests.swift */,
+				D2BB03B429F0B38400D79A56 /* AccountSummary */,
+				D2BB03B329F0B36D00D79A56 /* Utils */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";
@@ -179,6 +184,23 @@
 				D2BB03AF29F087A300D79A56 /* Date+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		D2BB03B329F0B36D00D79A56 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D226691A29DF49A100843B52 /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D2BB03B429F0B38400D79A56 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB03B529F0B3F000D79A56 /* ProfileTests.swift */,
+				D2BB03B729F0B47400D79A56 /* AccountTests.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 		D2D058EE29DC9F51009883B2 /* AccountSummary */ = {
@@ -312,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D226691B29DF49A100843B52 /* CurrencyFormatterTests.swift in Sources */,
+				D2BB03B829F0B47400D79A56 /* AccountTests.swift in Sources */,
+				D2BB03B629F0B3F000D79A56 /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

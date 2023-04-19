@@ -53,7 +53,7 @@ extension AccountSummaryViewController {
 
 struct Account: Codable {
     let id: String
-    let type: AccountSummaryCell.AccountType
+    let type: AccountType
     let name: String
     let amount: Decimal
     let createdDateTime: Date
