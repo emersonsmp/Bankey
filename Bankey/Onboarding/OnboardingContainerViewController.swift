@@ -21,11 +21,9 @@ class OnboardingContainerViewController: UIViewController {
         let page1 = OnboardingViewController(
             heroImageName: "delorean",
             titletext: "Bankey is faster, easier to use, has a brand new look and feel that make you feel like you are back in 1889.")
-        
         let page2 = OnboardingViewController(
             heroImageName: "world",
-            titletext: "Move your money around the world quickly and securely")
-        
+            titletext: "Move your money around the world quickly and securely")        
         let page3 = OnboardingViewController(
             heroImageName: "thumbs",
             titletext: "Learn more at www.bankey.com")

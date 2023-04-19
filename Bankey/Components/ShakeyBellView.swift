@@ -49,7 +49,7 @@ extension ShakeyBellView {
         buttonView.backgroundColor = .systemRed
         buttonView.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         buttonView.layer.cornerRadius = buttonHeight/2
-        buttonView.setTitle("9", for: .normal)
+        buttonView.setTitle("10", for: .normal)
         buttonView.setTitleColor(.white, for: .normal)
     }
     
