@@ -13,6 +13,8 @@
 		D226691B29DF49A100843B52 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226691A29DF49A100843B52 /* CurrencyFormatterTests.swift */; };
 		D2297EDF29F1EF0300035D1B /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2297EDE29F1EF0300035D1B /* SkeletonLoadable.swift */; };
 		D2297EE129F1F0BB00035D1B /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2297EE029F1F0BB00035D1B /* SkeletonCell.swift */; };
+		D2297EE529F726EB00035D1B /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2297EE429F726EB00035D1B /* ProfileManager.swift */; };
+		D2297EE729F72AAF00035D1B /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2297EE629F72AAF00035D1B /* AccountSummaryViewControllerTests.swift */; };
 		D23AB73529D6014B00CA0C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB73429D6014B00CA0C3F /* AppDelegate.swift */; };
 		D23AB73929D6014B00CA0C3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB73829D6014B00CA0C3F /* LoginViewController.swift */; };
 		D23AB73E29D6014C00CA0C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23AB73D29D6014C00CA0C3F /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		D226691A29DF49A100843B52 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 		D2297EDE29F1EF0300035D1B /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
 		D2297EE029F1F0BB00035D1B /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
+		D2297EE429F726EB00035D1B /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		D2297EE629F72AAF00035D1B /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		D23AB73129D6014B00CA0C3F /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23AB73429D6014B00CA0C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23AB73829D6014B00CA0C3F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,14 @@
 				D2BB03B329F0B36D00D79A56 /* Utils */,
 			);
 			path = BankeyUnitTests;
+			sourceTree = "<group>";
+		};
+		D2297EE329F726B800035D1B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D2297EE429F726EB00035D1B /* ProfileManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		D23AB72829D6014B00CA0C3F = {
@@ -203,6 +215,7 @@
 			children = (
 				D2BB03B529F0B3F000D79A56 /* ProfileTests.swift */,
 				D2BB03B729F0B47400D79A56 /* AccountTests.swift */,
+				D2297EE629F72AAF00035D1B /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -210,6 +223,7 @@
 		D2D058EE29DC9F51009883B2 /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
+				D2297EE329F726B800035D1B /* Networking */,
 				D2D058EF29DC9F96009883B2 /* AccountSummaryViewController.swift */,
 				D2BB03B129F08AAC00D79A56 /* AccountSummaryViewController+Networking.swift */,
 				D2D058F529DCC029009883B2 /* Header */,
@@ -342,6 +356,7 @@
 				D226691B29DF49A100843B52 /* CurrencyFormatterTests.swift in Sources */,
 				D2BB03B829F0B47400D79A56 /* AccountTests.swift in Sources */,
 				D2BB03B629F0B3F000D79A56 /* ProfileTests.swift in Sources */,
+				D2297EE729F72AAF00035D1B /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +367,7 @@
 				D24198E329DB68F50028B1C0 /* UIViewController+Utils.swift in Sources */,
 				D2297EE129F1F0BB00035D1B /* SkeletonCell.swift in Sources */,
 				D2BB03B029F087A300D79A56 /* Date+Utils.swift in Sources */,
+				D2297EE529F726EB00035D1B /* ProfileManager.swift in Sources */,
 				D23AB74C29D6063700CA0C3F /* LoginView.swift in Sources */,
 				D24198DE29DB4A8B0028B1C0 /* DummyViewController.swift in Sources */,
 				D2D058F229DCA652009883B2 /* AccountSummaryHeaderView.swift in Sources */,
