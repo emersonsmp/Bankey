@@ -1,0 +1,6 @@
+framework module Pods_BankeyUnitTests {
+  umbrella header "Pods-BankeyUnitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

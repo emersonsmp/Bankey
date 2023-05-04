@@ -7,49 +7,367 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "76D640B0-ADAF-4968-9CAC-F2CB0D4F3787"
+            uuid = "996C34FB-95E6-4857-B345-DC6E9F65204F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bankey/AccountSummary/AccountSummaryViewController.swift"
+            filePath = "Bankey/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "fetchProfile(group:userId:)"
+            startingLineNumber = "3"
+            endingLineNumber = "3"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "996C34FB-95E6-4857-B345-DC6E9F65204F - bf4d960277d2da14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for appColor"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3"
+                  endingLineNumber = "3"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "996C34FB-95E6-4857-B345-DC6E9F65204F - 59186c28a8ab1ad7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bankey.appColor.unsafeMutableAddressor : __C.UIColor"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3"
+                  endingLineNumber = "3"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "996C34FB-95E6-4857-B345-DC6E9F65204F - bf4d960277d2da35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for appColor"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "996C34FB-95E6-4857-B345-DC6E9F65204F - 59186c28a8ab1af6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bankey.appColor.unsafeMutableAddressor : __C.UIColor"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9914E9A-A5F9-4990-B249-2781DADB46F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/Utils/CurrenceFormatter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "makeBalanceAttributed(dollars:cents:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A9914E9A-A5F9-4990-B249-2781DADB46F6 - 218ea4a58535327c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bankey.CurrencyFormatter.makeBalanceAttributed(dollars: Swift.String, cents: Swift.String) -&gt; __C.NSMutableAttributedString"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/Utils/CurrenceFormatter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "1116">
+               </Location>
+               <Location
+                  uuid = "A9914E9A-A5F9-4990-B249-2781DADB46F6 - 218ea4a58535327c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bankey.CurrencyFormatter.makeBalanceAttributed(dollars: Swift.String, cents: Swift.String) -&gt; __C.NSMutableAttributedString"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/Utils/CurrenceFormatter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "1144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9950BA12-A62C-4246-9F85-FC7EF8900562"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/Utils/CurrenceFormatter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "makeBalanceAttributed(dollars:cents:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9950BA12-A62C-4246-9F85-FC7EF8900562 - 218ea4a585353325"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bankey.CurrencyFormatter.makeBalanceAttributed(dollars: Swift.String, cents: Swift.String) -&gt; __C.NSMutableAttributedString"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/Utils/CurrenceFormatter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  uuid = "9950BA12-A62C-4246-9F85-FC7EF8900562 - 218ea4a585353325"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bankey.CurrencyFormatter.makeBalanceAttributed(dollars: Swift.String, cents: Swift.String) -&gt; __C.NSMutableAttributedString"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/Utils/CurrenceFormatter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C6D18A1-2B9B-45DC-B688-DDEE35843D15"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/AccountSummary/Networking/ProfileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "fetchProfile(forUserId:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0F211B84-6F29-4E06-A083-F2A1FBEB2A59"
+            uuid = "EF5DE4FC-64D9-4D3E-8419-4B22A25EA5C4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bankey/AccountSummary/AccountSummaryViewController.swift"
+            filePath = "Bankey/AccountSummary/Networking/ProfileManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
-            landmarkName = "displayError(_:)"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchProfile(forUserId:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "624A867A-2D04-4047-B4EC-2188CF04ADC1"
+            uuid = "54A3F9DB-0320-4CCC-A0F2-BDF8EAB4410C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bankey/AccountSummary/AccountSummaryViewController.swift"
+            filePath = "Bankey/AccountSummary/Networking/ProfileManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
-            landmarkName = "titleAndMessage(for:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "fetchProfile(forUserId:completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C8A5DBB-B563-48C3-893B-49CBCA4291B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/AccountSummary/Networking/ProfileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "fetchProfile(forUserId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE403C00-9D26-44C6-99E2-5137A4B4D53A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/AccountSummary/AccountSummaryViewController+Networking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fetchAccounts(forUserId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A7B11C6-3132-4D4B-BD08-99FCA24E101F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/AccountSummary/AccountSummaryViewController+Networking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "fetchAccounts(forUserId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54F22830-A9FE-4E79-AC49-A886F7CB6B53"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/AccountSummary/AccountSummaryViewController+Networking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchAccounts(forUserId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36A41F51-DCA6-409A-809E-A44BDE25581E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/Utils/CurrenceFormatter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "dollarsFormatted(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB6B45A1-4702-4F1B-977D-17A1410D52EA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/Utils/CurrenceFormatter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "dollarsFormatted(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19E586B6-0FB0-489E-ADA6-B24C04B8155E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bankey/Utils/CurrenceFormatter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "dollarsFormatted(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "19E586B6-0FB0-489E-ADA6-B24C04B8155E - 16d86ff97b0b5179"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bankey.CurrencyFormatter.dollarsFormatted(Swift.Double) -&gt; Swift.String"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/Utils/CurrenceFormatter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "19E586B6-0FB0-489E-ADA6-B24C04B8155E - 16d86ff97b0b5179"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bankey.CurrencyFormatter.dollarsFormatted(Swift.Double) -&gt; Swift.String"
+                  moduleName = "Bankey"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emersonsampaio/Desktop/Desenvolvimento/Bankey/Bankey/Utils/CurrenceFormatter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "292">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

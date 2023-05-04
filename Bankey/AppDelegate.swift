@@ -1,6 +1,14 @@
 import UIKit
 
-let appColor: UIColor = .systemTeal
+//let appColor: UIColor = .systemTeal
+
+let appColor: UIColor = UIColor(
+    red: CGFloat(0xA7) / 255.0,
+    green: CGFloat(0x6C) / 255.0,
+    blue: CGFloat(0x26) / 255.0,
+    alpha: 1.0
+)
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -21,13 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         registerForNotifications()
         
-//        let vc = mainViewController
-        let vc = loginViewController
+        //let vc = mainViewController
+        let vc = onboardingContainerViewController
+        //let vc = loginViewController
         vc.setStatusBar()
         
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().backgroundColor = appColor
-        
         window?.rootViewController = vc
         
         return true
@@ -70,21 +78,21 @@ extension AppDelegate: LogoutDelegate {
 
 extension AppDelegate {
     func setRootViewController(_ vc: UIViewController, animated: Bool = true){
-        
         guard animated, let window = self.window else {
             self.window?.rootViewController = vc
             self.window?.makeKeyAndVisible()
             return
         }
         
-        
         window.rootViewController = vc
         window.makeKeyAndVisible()
-        UIView.transition(with: window,
-                          duration: 0.3,
-                          options: .transitionCrossDissolve,
-                          animations: nil,
-                          completion: nil)
+        UIView.transition(
+            with: window,
+            duration: 0.3,
+            options: .transitionCrossDissolve,
+            animations: nil,
+            completion: nil
+        )
     }
     
 }

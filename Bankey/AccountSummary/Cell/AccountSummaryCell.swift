@@ -22,12 +22,12 @@ class AccountSummaryCell: UITableViewCell {
         let accoountType: AccountType
         let accountName: String
         let balance: Decimal
-        
+
         var balanceAsAttributedString: NSAttributedString {
             return CurrencyFormatter().makeAttributedCurrency(balance)
         }
     }
-    
+
     let viewModel: ViewModel? = nil
     
     let typeLabel = UILabel()

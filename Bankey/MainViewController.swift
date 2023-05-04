@@ -17,7 +17,7 @@ class MainViewController: UITabBarController {
     
     private func setupViews(){
         let summaryVC = AccountSummaryViewController()
-        let moneyVC = MoveMoneyViewController()
+        let moneyVC = StocksViewController()
         let moreVC = MoreViewController()
         
         summaryVC.setTabBarImage(imageName: "list.dash.header.rectangle", title: "Summary")
@@ -48,11 +48,11 @@ class MainViewController: UITabBarController {
         tabBar.isTranslucent = false
     }
     
-//    public class AccountSummaryViewController: UIViewController{
-//        override func viewDidLoad() {
-//            view.backgroundColor = .systemGreen
-//        }
-//    }
+    public class AccountHomeViewController: UIViewController{
+        override func viewDidLoad() {
+            view.backgroundColor = .systemGreen
+        }
+    }
     
     class MoveMoneyViewController: UIViewController{
         override func viewDidLoad() {

@@ -19,7 +19,6 @@ struct CurrencyFormatter {
         let tuple = modf(amount.doubleValue)
         let dollars = convertDollar(tuple.0)
         let cents = convertCents(tuple.1)
-        
         return (dollars, cents)
     }
     
@@ -50,7 +49,7 @@ struct CurrencyFormatter {
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
-        formatter.currencySymbol = "$"
+        formatter.currencySymbol = ""
         
         if let result = formatter.string(from: dollars as NSNumber) {
             return result

@@ -18,12 +18,30 @@ class AccountSummaryViewController: UIViewController {
         welcomeMessage: "Welcome",
         name: "",
         date: Date())
+    
     var accountsCellViewModels: [AccountSummaryCell.ViewModel] = []
     
-    //components
-    var headerView = AccountSummaryHeaderView(frame: .zero)
-    var tableView = UITableView()
-    var refreshControl = UIRefreshControl()
+    lazy var headerView: AccountSummaryHeaderView = {
+        let header = AccountSummaryHeaderView(frame: .zero)
+        return header
+    }()
+    
+    var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = appColor
+        tableView.register(AccountSummaryCell.self, forCellReuseIdentifier: AccountSummaryCell.reuseID)
+        tableView.register(SkeletonCell.self, forCellReuseIdentifier: SkeletonCell.reuseID)
+        tableView.rowHeight = AccountSummaryCell.rowHeight
+        tableView.tableFooterView = UIView()
+        return tableView
+    }()
+    
+    var refreshControl: UIRefreshControl = {
+        let refresh = UIRefreshControl()
+        refresh.tintColor = appColor
+        return refresh
+    }()
     
     //Networking
     var profileManager: ProfileManageable = ProfileManager()
@@ -59,17 +77,9 @@ extension AccountSummaryViewController {
     }
     
     private func setupTableView() {
-        tableView.backgroundColor = appColor
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        tableView.register(AccountSummaryCell.self, forCellReuseIdentifier: AccountSummaryCell.reuseID)
-        tableView.register(SkeletonCell.self, forCellReuseIdentifier: SkeletonCell.reuseID)
-        tableView.rowHeight = AccountSummaryCell.rowHeight
-        tableView.tableFooterView = UIView()
-        
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
@@ -81,11 +91,9 @@ extension AccountSummaryViewController {
     }
     
     private func setupTableHeaderView(){
-        
         var size = headerView.systemLayoutSizeFitting(UIView.layoutFittingExpandedSize)
         size.width = UIScreen.main.bounds.width
         headerView.frame.size = size
-        
         tableView.tableHeaderView = headerView
     }
     
@@ -94,7 +102,6 @@ extension AccountSummaryViewController {
     }
     
     func setupRefreshControl(){
-        refreshControl.tintColor = appColor
         refreshControl.addTarget(self, action: #selector(refreshContent), for: .valueChanged)
         tableView.refreshControl = refreshControl
     }
@@ -129,7 +136,6 @@ extension AccountSummaryViewController: UITableViewDataSource {
 
 extension AccountSummaryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
     }
 }
 
@@ -229,7 +235,6 @@ extension AccountSummaryViewController {
     }
 }
 
-//MARK:
 extension AccountSummaryViewController {
     @objc func logoutTapped(sender: UIButton){
         NotificationCenter.default.post(name: .logout, object: nil)

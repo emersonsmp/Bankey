@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190E538FB796058908437CEB /* Pods_Bankey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFB8FFA8E45351C2F615708 /* Pods_Bankey.framework */; };
+		870878F87C1F9DD9C0BC36DB /* Pods_BankeyUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9435B7100485397AB34CD73 /* Pods_BankeyUnitTests.framework */; };
 		D219348629EDCCD800608433 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219348529EDCCD800608433 /* ShakeyBellView.swift */; };
 		D226690A29DE0A9900843B52 /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226690929DE0A9900843B52 /* DecimalUtils.swift */; };
 		D226690C29DE0B1A00843B52 /* CurrenceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226690B29DE0B1A00843B52 /* CurrenceFormatter.swift */; };
@@ -15,6 +17,11 @@
 		D2297EE129F1F0BB00035D1B /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2297EE029F1F0BB00035D1B /* SkeletonCell.swift */; };
 		D2297EE529F726EB00035D1B /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2297EE429F726EB00035D1B /* ProfileManager.swift */; };
 		D2297EE729F72AAF00035D1B /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2297EE629F72AAF00035D1B /* AccountSummaryViewControllerTests.swift */; };
+		D239839E2A04429F007F1A7C /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239839D2A04429F007F1A7C /* StocksViewController.swift */; };
+		D23983A22A04438D007F1A7C /* MarketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23983A12A04438D007F1A7C /* MarketListView.swift */; };
+		D23983A92A0444A7007F1A7C /* StockListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23983A82A0444A7007F1A7C /* StockListModel.swift */; };
+		D23983AE2A044669007F1A7C /* MyTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23983AD2A044669007F1A7C /* MyTableHeaderView.swift */; };
+		D23983B02A044694007F1A7C /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23983AF2A044694007F1A7C /* StockTableViewCell.swift */; };
 		D23AB73529D6014B00CA0C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB73429D6014B00CA0C3F /* AppDelegate.swift */; };
 		D23AB73929D6014B00CA0C3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB73829D6014B00CA0C3F /* LoginViewController.swift */; };
 		D23AB73E29D6014C00CA0C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23AB73D29D6014C00CA0C3F /* Assets.xcassets */; };
@@ -22,7 +29,6 @@
 		D23AB74C29D6063700CA0C3F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB74B29D6063700CA0C3F /* LoginView.swift */; };
 		D23AB74F29D75CD500CA0C3F /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB74E29D75CD500CA0C3F /* OnboardingContainerViewController.swift */; };
 		D23AB75129D76E5100CA0C3F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB75029D76E5100CA0C3F /* OnboardingViewController.swift */; };
-		D24198DE29DB4A8B0028B1C0 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24198DD29DB4A8B0028B1C0 /* DummyViewController.swift */; };
 		D24198E129DB5A220028B1C0 /* Localstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24198E029DB5A220028B1C0 /* Localstate.swift */; };
 		D24198E329DB68F50028B1C0 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24198E229DB68F50028B1C0 /* UIViewController+Utils.swift */; };
 		D24198E529DB6C2A0028B1C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24198E429DB6C2A0028B1C0 /* MainViewController.swift */; };
@@ -49,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BFB8FFA8E45351C2F615708 /* Pods_Bankey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bankey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D07B7D0F808BAF48ED2C9DD /* Pods-Bankey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankey.debug.xcconfig"; path = "Target Support Files/Pods-Bankey/Pods-Bankey.debug.xcconfig"; sourceTree = "<group>"; };
+		2A8493C81D8BEF02BF1F2EB1 /* Pods-BankeyUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankeyUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-BankeyUnitTests/Pods-BankeyUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F6361739343872D9A2A2CE5 /* Pods-Bankey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankey.release.xcconfig"; path = "Target Support Files/Pods-Bankey/Pods-Bankey.release.xcconfig"; sourceTree = "<group>"; };
+		C9435B7100485397AB34CD73 /* Pods_BankeyUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankeyUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D219348529EDCCD800608433 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		D226690929DE0A9900843B52 /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
 		D226690B29DE0B1A00843B52 /* CurrenceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenceFormatter.swift; sourceTree = "<group>"; };
@@ -58,6 +69,11 @@
 		D2297EE029F1F0BB00035D1B /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		D2297EE429F726EB00035D1B /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		D2297EE629F72AAF00035D1B /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
+		D239839D2A04429F007F1A7C /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
+		D23983A12A04438D007F1A7C /* MarketListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketListView.swift; sourceTree = "<group>"; };
+		D23983A82A0444A7007F1A7C /* StockListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockListModel.swift; sourceTree = "<group>"; };
+		D23983AD2A044669007F1A7C /* MyTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableHeaderView.swift; sourceTree = "<group>"; };
+		D23983AF2A044694007F1A7C /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		D23AB73129D6014B00CA0C3F /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23AB73429D6014B00CA0C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23AB73829D6014B00CA0C3F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +83,6 @@
 		D23AB74B29D6063700CA0C3F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D23AB74E29D75CD500CA0C3F /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		D23AB75029D76E5100CA0C3F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		D24198DD29DB4A8B0028B1C0 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		D24198E029DB5A220028B1C0 /* Localstate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localstate.swift; sourceTree = "<group>"; };
 		D24198E229DB68F50028B1C0 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		D24198E429DB6C2A0028B1C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +96,7 @@
 		D2D058F729DCC088009883B2 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		D2F97E6329E87E9000B0123A /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		D2F97E6529E880EF00B0123A /* NSNotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
+		D9CCA62D17AD37F17F2008E4 /* Pods-BankeyUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankeyUnitTests.release.xcconfig"; path = "Target Support Files/Pods-BankeyUnitTests/Pods-BankeyUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				870878F87C1F9DD9C0BC36DB /* Pods_BankeyUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,12 +112,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190E538FB796058908437CEB /* Pods_Bankey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006C0A941A36D980C0D21B28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D07B7D0F808BAF48ED2C9DD /* Pods-Bankey.debug.xcconfig */,
+				2F6361739343872D9A2A2CE5 /* Pods-Bankey.release.xcconfig */,
+				2A8493C81D8BEF02BF1F2EB1 /* Pods-BankeyUnitTests.debug.xcconfig */,
+				D9CCA62D17AD37F17F2008E4 /* Pods-BankeyUnitTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		42A5EDBE80CDB07474C5E54D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BFB8FFA8E45351C2F615708 /* Pods_Bankey.framework */,
+				C9435B7100485397AB34CD73 /* Pods_BankeyUnitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D219348429EDCCB200608433 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,12 +165,50 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		D239839A2A044220007F1A7C /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				D23983AC2A0444F9007F1A7C /* Header */,
+				D23983AB2A0444F1007F1A7C /* Cell */,
+				D23983A72A04449B007F1A7C /* Model */,
+				D23983A12A04438D007F1A7C /* MarketListView.swift */,
+				D239839D2A04429F007F1A7C /* StocksViewController.swift */,
+			);
+			path = Stocks;
+			sourceTree = "<group>";
+		};
+		D23983A72A04449B007F1A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D23983A82A0444A7007F1A7C /* StockListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D23983AB2A0444F1007F1A7C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D23983AF2A044694007F1A7C /* StockTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D23983AC2A0444F9007F1A7C /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D23983AD2A044669007F1A7C /* MyTableHeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		D23AB72829D6014B00CA0C3F = {
 			isa = PBXGroup;
 			children = (
 				D23AB73329D6014B00CA0C3F /* Bankey */,
 				D226691229DF484300843B52 /* BankeyUnitTests */,
 				D23AB73229D6014B00CA0C3F /* Products */,
+				006C0A941A36D980C0D21B28 /* Pods */,
+				42A5EDBE80CDB07474C5E54D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +230,7 @@
 				D23AB74A29D6060800CA0C3F /* Login */,
 				D23AB74D29D75C7C00CA0C3F /* Onboarding */,
 				D2D058EE29DC9F51009883B2 /* AccountSummary */,
+				D239839A2A044220007F1A7C /* Stocks */,
 				D24198DF29DB5A0F0028B1C0 /* Utils */,
 				D23AB74929D605C700CA0C3F /* Files */,
 			);
@@ -174,7 +252,6 @@
 			children = (
 				D23AB74B29D6063700CA0C3F /* LoginView.swift */,
 				D23AB73829D6014B00CA0C3F /* LoginViewController.swift */,
-				D24198DD29DB4A8B0028B1C0 /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -258,6 +335,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D226691729DF484300843B52 /* Build configuration list for PBXNativeTarget "BankeyUnitTests" */;
 			buildPhases = (
+				AF4211DC7DD321DA0D79FA48 /* [CP] Check Pods Manifest.lock */,
 				D226690D29DF484300843B52 /* Sources */,
 				D226690E29DF484300843B52 /* Frameworks */,
 				D226690F29DF484300843B52 /* Resources */,
@@ -276,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D23AB74529D6014C00CA0C3F /* Build configuration list for PBXNativeTarget "Bankey" */;
 			buildPhases = (
+				3C5512C0668D68A5F04BC3E5 /* [CP] Check Pods Manifest.lock */,
 				D23AB72D29D6014B00CA0C3F /* Sources */,
 				D23AB72E29D6014B00CA0C3F /* Frameworks */,
 				D23AB72F29D6014B00CA0C3F /* Resources */,
+				30DEF8352558C45F7B35BFE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,6 +428,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30DEF8352558C45F7B35BFE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankey/Pods-Bankey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankey/Pods-Bankey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bankey/Pods-Bankey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C5512C0668D68A5F04BC3E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bankey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF4211DC7DD321DA0D79FA48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankeyUnitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D226690D29DF484300843B52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -364,12 +508,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23983AE2A044669007F1A7C /* MyTableHeaderView.swift in Sources */,
+				D23983A92A0444A7007F1A7C /* StockListModel.swift in Sources */,
 				D24198E329DB68F50028B1C0 /* UIViewController+Utils.swift in Sources */,
+				D23983A22A04438D007F1A7C /* MarketListView.swift in Sources */,
+				D239839E2A04429F007F1A7C /* StocksViewController.swift in Sources */,
 				D2297EE129F1F0BB00035D1B /* SkeletonCell.swift in Sources */,
 				D2BB03B029F087A300D79A56 /* Date+Utils.swift in Sources */,
 				D2297EE529F726EB00035D1B /* ProfileManager.swift in Sources */,
 				D23AB74C29D6063700CA0C3F /* LoginView.swift in Sources */,
-				D24198DE29DB4A8B0028B1C0 /* DummyViewController.swift in Sources */,
 				D2D058F229DCA652009883B2 /* AccountSummaryHeaderView.swift in Sources */,
 				D23AB73929D6014B00CA0C3F /* LoginViewController.swift in Sources */,
 				D2F97E6429E87E9000B0123A /* UITextField+SecureToggle.swift in Sources */,
@@ -383,6 +530,7 @@
 				D2F97E6629E880EF00B0123A /* NSNotificationName.swift in Sources */,
 				D2D058F029DC9F96009883B2 /* AccountSummaryViewController.swift in Sources */,
 				D23AB74F29D75CD500CA0C3F /* OnboardingContainerViewController.swift in Sources */,
+				D23983B02A044694007F1A7C /* StockTableViewCell.swift in Sources */,
 				D24198E129DB5A220028B1C0 /* Localstate.swift in Sources */,
 				D2297EDF29F1EF0300035D1B /* SkeletonLoadable.swift in Sources */,
 				D2BB03B229F08AAC00D79A56 /* AccountSummaryViewController+Networking.swift in Sources */,
@@ -413,6 +561,7 @@
 /* Begin XCBuildConfiguration section */
 		D226691829DF484300843B52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8493C81D8BEF02BF1F2EB1 /* Pods-BankeyUnitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -438,6 +587,7 @@
 		};
 		D226691929DF484300843B52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9CCA62D17AD37F17F2008E4 /* Pods-BankeyUnitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -576,6 +726,7 @@
 		};
 		D23AB74629D6014C00CA0C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D07B7D0F808BAF48ED2C9DD /* Pods-Bankey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -604,6 +755,7 @@
 		};
 		D23AB74729D6014C00CA0C3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F6361739343872D9A2A2CE5 /* Pods-Bankey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

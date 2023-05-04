@@ -3,13 +3,41 @@ import UIKit
 
 class LoginView: UIView{
     
-    let stackView = UIStackView()
-    let usernameTextField = UITextField()
-    let passwordTextField = UITextField()
-    let dividerView = UIView()
+    lazy var stackView: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .vertical
+        stack.spacing = 8
+        return stack
+    }()
+    
+    let usernameTextField: UITextField = {
+        let username = UITextField()
+        username.translatesAutoresizingMaskIntoConstraints = false
+        username.placeholder = "Username"
+        return username
+    }()
+    
+    let passwordTextField: UITextField = {
+        let pass = UITextField()
+        pass.translatesAutoresizingMaskIntoConstraints = false
+        pass.placeholder = "Password"
+        pass.isSecureTextEntry = true
+        pass.enablePasswordToggle()
+        return pass
+    }()
+    
+    let dividerView: UIView = {
+        let divider = UIView()
+        divider.translatesAutoresizingMaskIntoConstraints = false
+        divider.backgroundColor = .systemGray.withAlphaComponent(0.2)
+        return divider
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
         style()
         layout()
     }
@@ -23,35 +51,16 @@ extension LoginView {
     func style() {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .secondarySystemBackground
-        
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 8
-        
-        usernameTextField.translatesAutoresizingMaskIntoConstraints = false
-        usernameTextField.placeholder = "Username"
-        usernameTextField.delegate = self
-        
-        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        passwordTextField.placeholder = "Password"
-        passwordTextField.delegate = self
-        passwordTextField.isSecureTextEntry = true
-        passwordTextField.enablePasswordToggle()
-        
-        dividerView.translatesAutoresizingMaskIntoConstraints = false
-        dividerView.backgroundColor = .systemGray.withAlphaComponent(0.2)
-        
         layer.cornerRadius = 5
         clipsToBounds = true
-    }
-    
-    func layout() {
+        
         stackView.addArrangedSubview(usernameTextField)
         stackView.addArrangedSubview(dividerView)
         stackView.addArrangedSubview(passwordTextField)
-        
         addSubview(stackView)
-        
+    }
+    
+    func layout() {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
             stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
@@ -72,11 +81,11 @@ extension LoginView: UITextFieldDelegate{
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-//        if textField.text != ""{
-//            return true
-//        }else{
-//            return false
-//        }
+        //if textField.text != ""{
+        //  return true
+        //}else{
+        //  return false
+        //}
         
         return true
     }
